@@ -37,7 +37,7 @@ const Sura = ({ verses, titles, notes }) => {
                             </button>
                         )}
                         {showNotes[vno] && notes[no + `:` + vno] && (
-                            <div className={`text-justify text-neutral-600 font-serif my-3 whitespace-pre-line ${showNotes[vno] ? 'opacity-100' : 'opacity-0'}`}>
+                            <div className={`text-justify text-neutral-600 font-serif my-3 whitespace-pre-line ${showNotes[vno] ? 'opacity-100' : 'opacity-0'} border border-gray-300 px-1 py-1`}>
                                 {notes[no + `:` + vno].join('\n\n')}
                             </div>
                         )}
