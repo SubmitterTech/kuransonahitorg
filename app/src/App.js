@@ -7,6 +7,9 @@ function App() {
   const [verses, setVerses] = useState(null);
   const [titles, setTitles] = useState(null);
   const [notes, setNotes] = useState(null);
+  const [verses_eng, setVerses_eng] = useState(null);
+  const [titles_eng, setTitles_eng] = useState(null);
+  const [notes_eng, setNotes_eng] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -20,6 +23,15 @@ function App() {
 
         const resN = await import('./assets/notes.json');
         setNotes(resN.default);
+
+        const resV_eng = await import('./assets/verses_eng.json');
+        setVerses_eng(resV_eng.default);
+
+        const resT_eng = await import('./assets/titles_eng.json');
+        setTitles_eng(resT_eng.default);
+
+        const resN_eng = await import('./assets/notes_eng.json');
+        setNotes_eng(resN_eng.default);
       } catch (error) {
         console.error('Failed to load one of the source json files: ', error);
       } finally {
@@ -44,7 +56,7 @@ function App() {
     <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<List />} />
-        <Route path="/:no" element={<Verses verses={verses} titles={titles} notes={notes} />} />
+        <Route path="/:no" element={<Verses verses={verses} titles={titles} notes={notes} verses_eng={verses_eng} titles_eng={titles_eng} notes_eng={notes_eng} />} />
       </Routes>
     </Router>
   );
