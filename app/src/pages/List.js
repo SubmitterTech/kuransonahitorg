@@ -1,42 +1,88 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import suras from '../assets/suras.json';
+import surasEng from '../assets/suras_eng.json';
 
 const List = () => {
     const navigate = useNavigate();
 
+    const [showEnglish, setShowEnglish] = useState(false);
+
+    useEffect(() => {
+        // localStorage'dan 'language' anahtarını kontrol et
+        const language = localStorage.getItem('language');
+
+        // Eğer 'language' anahtarı yoksa, varsayılan bir değerle oluştur
+        if (!language) {
+            localStorage.setItem('language', JSON.stringify("tr"));
+            setShowEnglish(false);
+        } else {
+            // Eğer 'language' anahtarı varsa ve değeri 'eng' ise 'showEnglish' değerini true yap
+            if (JSON.parse(localStorage.getItem("language")) === "eng") {
+                setShowEnglish(true)
+            }
+            else {
+                setShowEnglish(false)
+            }
+        }
+    }, []);
 
     const handleSuraClick = (suraNumber) => {
         navigate(`/${suraNumber}`);
     };
 
     return (
-        <div className="w-screen h-screen bg-white p-2 overflow-y-auto flex flex-col items-center">
-            <div className="flex bg-sky-400/70 mb-5 py-4 px-2 rounded lg:w-1/2 w-full font-semibold justify-center text-3xl text-neutral-800">
-                {`SURE BAŞLIKLARI`}
+        <React.StrictMode>
+
+            <div className="w-screen h-screen bg-white p-2 overflow-y-auto flex flex-col items-center">
+                <div className='flex justify-end w-screen h-screen m-0 p-0 my-1'>
+                    <div className={`${showEnglish ? "bg-gray-400" : "bg-gray-300"} px-2 py-2 mx-2 flex justify-center items-center h-[35px] w-[70px] cursor-pointer`} onClick={() => {
+
+                        setShowEnglish(!showEnglish)
+                        localStorage.setItem("language", JSON.stringify(showEnglish ? "tr" : "eng"))
+                    }}>
+                        {showEnglish ? "TR" : "TR-EN"}
+                    </div>
+                </div>
+                <div className="flex bg-sky-400/70 mb-5 py-4 px-2 rounded lg:w-1/2 w-full font-semibold justify-center text-3xl text-neutral-800">
+                    SURE BAŞLIKLARI
+                </div>
+                {Object.entries(suras).map(([suraNumber, suraTitle]) => {
+
+                    const s = suraTitle.split("\n");
+                    const name = s[0];
+                    const title = s[1] ? s[1] : "";
+
+                    const suraTitleEng = surasEng[suraNumber];
+                    let nameEng, titleEng;
+
+                    if (suraTitleEng) {
+                        const sEng = suraTitleEng.split("\n");
+                        nameEng = sEng[2];
+                        titleEng = sEng[3] ? sEng[3] : "";
+                    } else {
+                        nameEng = "";
+                        titleEng = "";
+                    }
+
+                    return (
+                        <button
+                            key={suraNumber}
+                            onClick={() => handleSuraClick(suraNumber)}
+                            className="lg:w-1/2 w-full flex justify-between mb-3 bg-neutral-100 hover:bg-blue-100 text-neutral-800 font-semibold border border-neutral-400 rounded shadow"
+                        >
+                            <div className="bg-neutral-800 text-sky-500 w-14 py-2 px-2 rounded-l font-semibold text-base lg:text-xl">
+                                {suraNumber}
+                            </div>
+                            <div className="flex w-full justify-between font-serif font-normal text-lg lg:text-2xl">
+                                <div className="py-1.5 pl-2">{name} {showEnglish ? `/ ${nameEng}` : ""}</div>
+                                <div className="py-1.5 pr-2">{title} {showEnglish ? `/ ${titleEng}` : ""}</div>
+                            </div>
+                        </button>
+                    )
+                })}
             </div>
-            {Object.entries(suras).map(([suraNumber, suraTitle]) => {
-
-                const s = suraTitle.split("\n");
-                const name = s[0];
-                const title = s[1] ? s[1] : "";
-
-                return (
-                    <button
-                        key={suraNumber}
-                        onClick={() => handleSuraClick(suraNumber)}
-                        className="lg:w-1/2 w-full flex justify-between mb-3 bg-neutral-100 hover:bg-blue-100 text-neutral-800 font-semibold border border-neutral-400 rounded shadow"
-                    >
-                        <div className="bg-neutral-800 text-sky-500 w-14 py-2 px-2 rounded-l font-semibold text-base lg:text-xl">{suraNumber}</div>
-                        <div className="flex w-full justify-between font-serif font-normal text-lg lg:text-2xl">
-                            <div className="py-1.5 pl-2">{name}</div>
-                            <div className="py-1.5 pr-2">{title}</div>
-                        </div>
-                    </button>
-                )
-            })}
-        </div>
+        </React.StrictMode>
     );
 };
-
 export default List;
