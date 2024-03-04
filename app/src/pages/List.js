@@ -71,7 +71,7 @@ const List = () => {
                             onClick={() => handleSuraClick(suraNumber)}
                             className="lg:w-1/2 w-full flex justify-between mb-3 bg-neutral-100 hover:bg-blue-100 text-neutral-800 font-semibold border border-neutral-400 rounded shadow"
                         >
-                            <div className="bg-neutral-800 text-sky-500 w-14 py-2 px-2 rounded-l font-semibold text-base lg:text-xl">
+                            <div className="bg-neutral-800 text-sky-500 w-14 h-full py-2 px-2 rounded-l font-semibold text-base lg:text-xl">
                                 {suraNumber}
                             </div>
                             <div className="flex w-full justify-between font-serif font-normal text-lg lg:text-2xl">
