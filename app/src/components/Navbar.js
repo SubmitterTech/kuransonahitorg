@@ -9,7 +9,7 @@ function Navbar() {
     const handleLinkClick = (path) => {
         setIsOpen(false);
 
-        if (path == "/ekler") {
+        if (path === "/ekler") {
             window.location.href = "/ekler";
         } else {
             navigate(path); // navigate fonksiyonunu kullanarak ilgili path'e yönlendir
