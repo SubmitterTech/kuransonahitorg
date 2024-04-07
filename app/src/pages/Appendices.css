@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     padding: 25px;
-    overflow-x: hidden; /* Yatay kaydırma çubuğunu engelle */
+    overflow-x: hidden;
 }
 
 .appendices-container .tablo-ul {
@@ -49,6 +49,12 @@
     text-align: center;
     border: 1px solid;
     overflow-x: auto; /* Yatay kaydırma çubuğunu etkinleştir */
+    display: block; /* Tabloyu blok olarak ayarla, böylece kendi içinde kaydırılabilir */
+}
+
+.appendices-container table {
+    width: auto; /* Tablonun içeriğine göre genişlemesini sağla */
+    min-width: 100%; /* En az kapsayıcının genişliği kadar olmalı */
 }
 
 .appendices-container img, .appendices-container table {
@@ -63,9 +69,19 @@
 @media (max-width:768px) {
     .appendices-container {
         width: 100%; /* Sağa ve sola kaydırma olmaması için genişliği ayarla */
+        padding: 10px;
     }
 
     .appendices-container .tables, .appendices-container .picture {
         width: 100%; /* Sağa ve sola kaydırma olmaması için genişliği ayarla */
+    }
+
+    .appendices-container .tables {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .appendices-container .tables th, .appendices-container .tables td {
+        padding: 10px 5px; /* Mobil görünüm için padding'i azalt */
+        font-size: 12px; /* Gerekirse yazı boyutunu küçült */
     }
 }
