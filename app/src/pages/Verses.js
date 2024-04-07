@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import Navbar from '../components/Navbar';
 
 const Verses = ({ verses, titles, notes, verses_eng, titles_eng, notes_eng }) => {
     const { no } = useParams();
@@ -43,8 +44,9 @@ const Verses = ({ verses, titles, notes, verses_eng, titles_eng, notes_eng }) =>
     };
 
     return (
-        
-            <div className={`select-text w-screen h-screen bg-white py-2 flex flex-col overflow-y-auto`}>
+        <>
+            <Navbar />
+            <div className={`select-text w-screen h-screen bg-white py-2 flex flex-col overflow-y-auto mt-5`}>
                 <div className='flex justify-end w-screen m-0 p-0 my-1'>
                     <div className={`${showEnglish ? "bg-gray-400" : "bg-gray-300"} px-2 py-2 mx-2 flex justify-center items-center h-[35px] w-[70px] cursor-pointer`} onClick={() => {
 
@@ -106,7 +108,7 @@ const Verses = ({ verses, titles, notes, verses_eng, titles_eng, notes_eng }) =>
                     </div>
                 )}
             </div>
-       
+        </>
     );
 };
 

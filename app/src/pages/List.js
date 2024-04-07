@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import suras from '../assets/suras.json';
 import surasEng from '../assets/suras_eng.json';
+import Navbar from '../components/Navbar';
 
 const List = () => {
     const navigate = useNavigate();
@@ -33,9 +34,10 @@ const List = () => {
 
     return (
         <React.StrictMode>
+            <Navbar/>
 
-            <div className="w-screen h-screen bg-white p-2 overflow-y-auto flex flex-col items-center">
-                <div className='flex justify-end w-screen h-screen m-0 p-0 my-1'>
+            <div className="w-screen h-screen bg-white p-2 overflow-y-auto flex flex-col items-center mt-12">
+                <div className='flex justify-end w-screen h-screen m-0 p-0 my-1 mt-3'>
                     <div className={`${showEnglish ? "bg-gray-400" : "bg-gray-300"} px-2 py-2 mx-2 flex justify-center items-center h-[35px] w-[70px] cursor-pointer`} onClick={() => {
 
                         setShowEnglish(!showEnglish)
