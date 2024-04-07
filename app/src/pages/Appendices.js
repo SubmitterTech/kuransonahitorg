@@ -137,7 +137,7 @@ const Appendices = () => {
   return (
     <>
     <Navbar/>
-    <div className='appendices-container'>
+    <div className='appendices-container font-serif'>
       <h1>EKLER</h1>
       {/* Menüyü burada render ediyoruz */}
       <ul className='tablo-ul'>
@@ -220,7 +220,7 @@ const Appendices = () => {
 
               return (
 
-                <div key={index}>
+                <div key={index} className='text-xl '>
                   {item.type === 'title' && (
                     <h1
                       // Burada hesaplanan titleId'yi kullanıyoruz. Eğer titleId null ise, id ataması yapılmayacak.
@@ -229,7 +229,7 @@ const Appendices = () => {
                       {item.content}
                     </h1>
                   )}
-                  {item.type === 'text' && <p>{item.content}</p>}
+                  {item.type === 'text' && <p className='text-justify hyphens-auto'>{item.content}</p>}
                   {item.type === 'evidence' && (
                     <div>
                       <p>{item.content}</p>
