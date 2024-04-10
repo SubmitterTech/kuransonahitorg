@@ -118,7 +118,6 @@
         "19": "Submission:\nThe Only Religion ",
         "26": "Attributes of God ",
         "28": "Choose Your Friends Carefully ",
-        "31": "GOD  is  Compassionate  towards  the ",
         "33": "The Birth of Mary ",
         "38": "The Birth of John ",
         "42": "Mary and Jesus ",
@@ -321,7 +320,7 @@
         "48": "The Majority Doomed ",
         "52": "Quran:\nFully Detailed ",
         "59": "Noah ",
-        "66": "Hûd ",
+        "65": "Hûd ",
         "70": "Following the Parents Blindly:\nA Human Tragedy ",
         "73": "Sãleh ",
         "75": "The Message:\nProof of Messengership ",
@@ -485,7 +484,6 @@
         "68": "Jacob Senses Joseph ",
         "69": "Back in Egypt ",
         "70": "Joseph Keeps His Brother ",
-        "81": "Back In Palestine ",
         "88": "Israel Goes to Egypt ",
         "99": "In Egypt "
     },
@@ -592,7 +590,7 @@
         "78": "The Noon Prayer ",
         "79": "Meditation ",
         "82": "Healing and Mercy ",
-        "86": "Divine Revelation:\nThe Source of All Knowledge ",
+        "85": "Divine Revelation:\nThe Source of All Knowledge ",
         "88": "Mathematical Composition\nof the Quran ",
         "90": "God’s Messengers Challenged ",
         "94": "Messengership: An Essential Test ",
@@ -773,7 +771,7 @@
         "123": "Hûd ",
         "141": "Sãleh  ",
         "160": "Lot ",
-        "173": "Shu‘aib ",
+        "176": "Shu‘aib ",
         "192": "The Quran ",
         "198": "The Quran Must Be Translated",
         "210": "False Messengers\nIncapable of Preaching\nthe Worship of God ALONE* ",
@@ -892,7 +890,6 @@
         "4": "Devotion to God Is Indivisible ",
         "5": "Do Not Change Your Names ",
         "7": "Muhammad Pledges to Support God’s Messenger of the Covenant* ",
-        "8": "We  took  from  them  a  solemn pledge.* ",
         "9": "The Battle of the Parties ",
         "21": "The Prophet’s Courage* ",
         "25": "During Muhammad’s Time ",
@@ -1065,7 +1062,7 @@
         "15": "Angels As Daughters: A Blasphemy",
         "22": "Inherited Traditions Condemned ",
         "26": "Abraham’s Example",
-        "30": "Muhammad Ridiculed",
+        "31": "Muhammad Ridiculed",
         "33": "Materials of This World:\nAll That The Disbelievers Get",
         "36": "Invisible, Devilish, Companions *",
         "40": "God’s Messenger of\nthe Covenant",
@@ -1144,7 +1141,7 @@
         "34": "“Mohammedans” Challenge God and Produce Hadith "
     },
     "53": {
-        "1": "♦ ♦ ♦ ♦\nSura 53: The Stars\nIn the name of God, Most Gracious, Most Merciful",
+        "1": "♦ ♦ ♦ ♦\nSura 53: The Stars\n(El-Necm)\nIn the name of God, Most Gracious, Most Merciful",
         "19": "The Flimsy Idols",
         "29": "Choose Your Friends Carefully",
         "45": "The Husband Determines\nThe Baby’s Gender"
@@ -1310,7 +1307,7 @@
         "1": "♦ ♦ ♦ ♦\nSura 90: The Town\n(Al-Balad)\nIn the name of God, Most Gracious, Most Merciful"
     },
     "91": {
-        "8": "♦ ♦ ♦ ♦\nSura 91: The Sun \n(Al-Shams)\nIn the name of God, Most Gracious, Most Merciful"
+        "1": "♦ ♦ ♦ ♦\nSura 91: The Sun \n(Al-Shams)\nIn the name of God, Most Gracious, Most Merciful"
     },
     "92": {
         "1": "♦ ♦ ♦ ♦\nSura 92: The Night\n(Al-Layl)\nIn the name of God, Most Gracious, Most Merciful"
