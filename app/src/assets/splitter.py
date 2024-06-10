@@ -46,5 +46,5 @@ for page, content in quran_tr.items():
 # Save the processed data to new files
 save_json(verses_map, 'verses.json')
 save_json(titles_map, 'titles.json')
-save_json(first_indexed_titles, 'suras.json')
+#save_json(first_indexed_titles, 'suras.json')
 save_json(notes_map, 'notes.json')

@@ -5,7 +5,6 @@
             "1": ""
         }
     },
-    
     {
         "page": 397,
         "text": {
@@ -281,7 +280,7 @@
             "9": "Bulabildiğim mevcut tüm Kuran çeviri ve yorum (Tefsir) kitaplarını satın aldım. Onları geniş bir masaya koydum ve çevirime başladım. İlk sure, Anahtar, birkaç gün içinde tamamlandı. Sure 2’nin ilk ayeti “A.L.M.”dir. Bu ayetin çevirisi ise dört yıl sürdü ve Kuran’ın büyük matematiksel Mucizesi olan “sır”rın ilahi ortaya çıkışına rastladı.",
             "10": "Kuran tefsiri kitapları, “hiç kimse Kuranî Başlangıçlar olan A.L.M. veya diğer herhangi bir başlangıcın anlamını veya önemini bilmez” şeklinde ittifakla hemfikirdi. Kuran’ı bilgisayara yazmaya, tüm metni analiz edip bu Kuranî Başlangıçlar arasında herhangi bir matematiksel ilişki olup olmadığını görmeye karar verdim."
         },
-        "picture": {},  
+        "picture": {},
         "evidence": {
             "2": {
                 "lines": {
@@ -1773,7 +1772,7 @@
             "11": {
                 "lines": {
                     "1": "Tanrımız Rab BİR’dir!",
-                    "2": "Bu nedenle,", 
+                    "2": "Bu nedenle,",
                     "3": "Tanrınız Rabbe tapın",
                     "4": "tüm yüreğinizle,",
                     "5": "tüm ruhunuzla,",
@@ -1984,11 +1983,15 @@
                     "İlahi İsim",
                     "Sayısal Değer"
                 ],
-                "values" : [
-                    "“Vahid” (Bir)", "19",
-                    "“Zul Fadl El-‘Azim” (Sonsuz Lütuf Sahibi)", "2698",
-                    "“Mecid” (Şanlı)","57",
-                    "“Cami” (Toplayan)","114"
+                "values": [
+                    "“Vahid” (Bir)",
+                    "19",
+                    "“Zul Fadl El-‘Azim” (Sonsuz Lütuf Sahibi)",
+                    "2698",
+                    "“Mecid” (Şanlı)",
+                    "57",
+                    "“Cami” (Toplayan)",
+                    "114"
                 ]
             }
         },
@@ -2772,7 +2775,7 @@
                     "1": "Biz Peygamberlerle antlaşma yaptığımızda ve seninle (Ey Muhammed), Nuh ile, İbrahim ile, Musa ile ve Meryemoğlu İsa ile, onlarla sağlam bir antlaşma yaptık. (33:7) (Muhammad Marmaduke Pickthall’a göre)"
                 },
                 "ref": [
-                   "33:7"
+                    "33:7"
                 ]
             },
             "10": {
@@ -2877,7 +2880,7 @@
         },
         "table": {
             "2": {
-                "ref": "Tablo : Kuran’ın Başlangıcından, “Reşede” Kök Kelimesinin İlk Geçişine Kadar Olan Her Suredeki Tüm Ayet Numaraları",
+                "ref": "Tablo 2: Kuran’ın Başlangıcından, “Reşede” Kök Kelimesinin İlk Geçişine Kadar Olan Her Suredeki Tüm Ayet Numaraları",
                 "title": [
                     "Sure No.",
                     "Ayetlerin Numarası",
@@ -3897,7 +3900,7 @@
             "2": "Edip Yüksel’in keşfi, “Anahtar”ın ihtişamını pekiştirir ve açıkça ilan eder ki o, Arapça okunmalıdır.",
             "3": "“Anahtar”ı Arapça okuduğunuz zaman dudaklarınız tam 19 kez birbirlerine dokunur.",
             "4": "Dudaklarınız “B” ve “M” harflerinin geçtiği yerlerde birbirine dokunur. 4 tane “B” ve 15 tane “M” bulunur ve bunların toplamı 19 eder. 4 “B”nin sayısal değeri 4x2=8’dir ve 15 “M”nin sayısal değeri 15x40=600’dür. 4 “B” ve 15 “M”nin toplam sayısal değeri 608’dir, bu da 19x32’dir.",
-            "8": "[10] Sıkça rastlanan meydan okumalardan biri de şudur: “Eğer Kuran, (6:19, 6:38 & 114’te ileri sürüldüğü gibi) tam ve detaylı ise İletişim Dualarının (Namazın) detayları nerede?” Bu insanlar bu soruyu sorarlar çünkü Kuran’ın bize İletişim Dualarının İbrahim’den geldiğini bildirdiğinin (21:73 & 22:78) farkında değildirler. Eğer eğilmeleri, secdeleri ve Teşehhütleri ile birlikte namazların numaralarını yazarsak şunu elde ederiz:",
+            "8": "[10] Sıkça rastlanan meydan okumalardan biri de şudur: “Eğer Kuran, (6:19, 6:38 & 6:114’te ileri sürüldüğü gibi) tam ve detaylı ise İletişim Dualarının (Namazın) detayları nerede?” Bu insanlar bu soruyu sorarlar çünkü Kuran’ın bize İletişim Dualarının İbrahim’den geldiğini bildirdiğinin (21:73 & 22:78) farkında değildirler. Eğer eğilmeleri, secdeleri ve Teşehhütleri ile birlikte namazların numaralarını yazarsak şunu elde ederiz:",
             "9": "1 1 2 2 4 1 2 4 4 8 2 3 4 4 8 2 4 3 3 6 2 5 4 4 8 2",
             "10": "Bu uzun sayı şunları içerir, 5 vakit namazda okuduğumuz sure (1), onu takiben birinci namazın numarasını (1), sonra bu namazda okuduğumuz “Anahtar”ların sayısını (2), sonra eğilmelerin (Rükû) sayısını (2), sonra secdelerin sayısını (4), sonra Teşehhütlerin (oturma pozisyonunda) sayısını (1), sonra ikinci namazın numarasını (2), sonra ikinci namazda okuduğumuz “Anahtar”ların sayısını (4), sonra bu namazdaki eğilmelerin (Rükû) sayısını (4), sonra secdelerin sayısını (8), sonra Teşehhütlerin sayısını (2), sonra üçüncü namazın numarasını (3) ve böylelikle son namaza kadar böyle devam eder. Bu uzun sayı 19’un katıdır ve bu, Rükû, Sücûd ve Teşehhüdün sayısına varıncaya kadar namazların en ufak ayrıntılarını doğrular."
         },
@@ -3997,8 +4000,8 @@
         },
         "evidence": {},
         "titles": {
-            "5": "GÜNLÜK BEŞ VAKİT NAMAZIN DOĞRULANMASI,", 
-            "6": "EĞİLME (Rükû),", 
+            "5": "GÜNLÜK BEŞ VAKİT NAMAZIN DOĞRULANMASI,",
+            "6": "EĞİLME (Rükû),",
             "7": "SECDE (Sücûd) ve TEŞEHHÜT SAYISI"
         }
     },
@@ -4380,7 +4383,7 @@
                     "2": "İsa’ya karşı birçok suçlamada bulundular.",
                     "3": "Pilatus onu tekrar sorguya çekti:",
                     "4": "“Elbette birkaç yanıtın vardır?",
-                    "5": "Sana karşı kaç suçlama ", 
+                    "5": "Sana karşı kaç suçlama ",
                     "6": "yapıldığını gör.’’",
                     "7": "Fakat Pilatus’a büyük ölçüde sürpriz oldu;",
                     "8": "İsa başka yanıt vermedi."
@@ -5523,16 +5526,76 @@
                     "Çarpım Sonucu"
                 ],
                 "values": [
-                    "1","7","1","x","7","=","7",
-                    "2","286","2","x","16","=","32",
-                    "3","200","3","x","2","=","6",
-                    ".",".",".","","",".","",
-                    "9","127","9","x","10","=","90",
-                    ".",".",".","",".","","",
-                    "114","6","6","x","6","=","36",
-                    "","",".....","",".....","",".....",
-                    "","","975","","906","","7771",
-                    "","","975 + 906 = 1881 = 19x99","","","","(19x409)"
+                    "1",
+                    "7",
+                    "1",
+                    "x",
+                    "7",
+                    "=",
+                    "7",
+                    "2",
+                    "286",
+                    "2",
+                    "x",
+                    "16",
+                    "=",
+                    "32",
+                    "3",
+                    "200",
+                    "3",
+                    "x",
+                    "2",
+                    "=",
+                    "6",
+                    ".",
+                    ".",
+                    ".",
+                    "",
+                    "",
+                    ".",
+                    "",
+                    "9",
+                    "127",
+                    "9",
+                    "x",
+                    "10",
+                    "=",
+                    "90",
+                    ".",
+                    ".",
+                    ".",
+                    "",
+                    ".",
+                    "",
+                    "",
+                    "114",
+                    "6",
+                    "6",
+                    "x",
+                    "6",
+                    "=",
+                    "36",
+                    "",
+                    "",
+                    ".....",
+                    "",
+                    ".....",
+                    "",
+                    ".....",
+                    "",
+                    "",
+                    "975",
+                    "",
+                    "906",
+                    "",
+                    "7771",
+                    "",
+                    "",
+                    "975 + 906 = 1881 = 19x99",
+                    "",
+                    "",
+                    "",
+                    "(19x409)"
                 ]
             },
             "5": {
@@ -6903,9 +6966,15 @@
                     "9",
                     "127",
                     "8128",
-                    "","---","----", 
-                    "","988","85690", 
-                    "","(19x52)","(19x4510)"
+                    "",
+                    "---",
+                    "----",
+                    "",
+                    "988",
+                    "85690",
+                    "",
+                    "(19x52)",
+                    "(19x4510)"
                 ]
             },
             "11": {
@@ -8373,8 +8442,7 @@
                     "2": "Keşke çeşitli toplumların halkları iman edip doğru bir hayatı sürdürseydi, onlara gökten ve yerden nimetler yağdırırdık. [7:96]",
                     "3": "Mutluluğunuzu veya bedbahtlığınızı kontrol eden Tanrı’dır. … sizi zengin yahut fakir yapan Tanrı’dır. [53:43, 53:48]"
                 },
-                "ref": [
-                ]
+                "ref": []
             }
         },
         "titles": {
