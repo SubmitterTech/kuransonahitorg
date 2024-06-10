@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Verses from './pages/Verses';
 import List from './pages/List';
 import Appendices from './pages/Appendices';
+import Apps from './pages/Apps';
 
 function App() {
   const [verses, setVerses] = useState(null);
@@ -59,7 +60,8 @@ function App() {
         <Route path="/" element={<List />} />
         <Route path="/:no" element={<Verses verses={verses} titles={titles} notes={notes} verses_eng={verses_eng} titles_eng={titles_eng} notes_eng={notes_eng} />} />
         <Route path="/ekler" element={<Appendices />} />
-        <Route path="/ekler/:ekId" element={<Appendices />} />
+        <Route path="/ek" element={<Appendices />} />
+        <Route path="/ek/:appId" element={<Apps />} />
       </Routes>
     </Router>
   );

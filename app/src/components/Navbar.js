@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // useNavigate'i import edin
+import logo512 from '../assets/pictures/logo512.png';
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,7 @@ function Navbar() {
         <nav className="fixed top-0 w-full z-50 bg-gray-800 text-white p-4">
             <div className="container mx-auto flex justify-between items-center">
                 <div className="text-lg font-semibold">
-                    <img src='logo192.png' className="w-12 h-8" alt="Logo" />
+                    <img src={logo512} className="w-12 h-8" alt="Logo" />
                 </div>
                 <div className="hidden md:flex space-x-4">
                     <button onClick={() => handleLinkClick('/')} className="hover:text-gray-400">Kur'an Oku</button>
