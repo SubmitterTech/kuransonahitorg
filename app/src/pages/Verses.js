@@ -36,12 +36,38 @@ const Verses = ({ verses, titles, notes, verses_eng, titles_eng, notes_eng }) =>
 
 
     const renderVerseText = (text) => {
-        return text.split(/(TANRI|GOD)/).map((part, index) => (
-            <span key={index}>
-                {part === "TANRI" || part === "GOD" ? <span className="font-semibold">{part}</span> : part}
-            </span>
-        ));
+        if (!text.includes('\n')) {
+            return text.split(/(TANRI|GOD)/).map((part, index) => (
+                <span key={index} className={part === "TANRI" || part === "GOD" ? "font-semibold" : ""}>
+                    {part}
+                </span>
+            ));
+        }
+
+        const parts = text.split('\n');
+        const middleIndex = Math.floor(parts.length / 2);
+
+        return (
+            <>
+                {parts.map((part, index) => (
+                    <div key={index} style={{ textAlign: index === middleIndex ? 'center' : 'left' }}>
+                        {index === middleIndex ? (
+                            <span className="font-semibold italic">{part}</span>
+                        ) : (
+                            part.split(/(TANRI|GOD)/).map((subPart, subIndex) => (
+                                <span key={subIndex} className={subPart === "TANRI" || subPart === "GOD" ? "font-semibold" : ""}>
+                                    {subPart}
+                                </span>
+                            ))
+                        )}
+                    </div>
+                ))}
+            </>
+        );
     };
+
+
+
 
     return (
         <>
@@ -61,7 +87,7 @@ const Verses = ({ verses, titles, notes, verses_eng, titles_eng, notes_eng }) =>
                         <div key={vno} className="p-2 flex w-full text-xl flex-col">
                             {titles && titles[no][vno] && <div className="text-center "><span className="italic font-serif whitespace-pre mt-3 font-semibold text-wrap">{titles[no][vno]}</span></div>}
                             {showEnglish && (titles_eng && titles_eng[no][vno] && <div className="text-center "><span className="italic font-serif whitespace-pre mt-3 font-semibold text-wrap">{titles_eng[no][vno]}</span></div>)}
-                            <div className="text-justify">{`[${no}:${vno}] `}<span className="font-serif whitespace-pre-line">{renderVerseText(text)}</span></div>
+                            <div className="text-justify">{`[${no}:${vno}] `}<span className="font-serif">{renderVerseText(text)}</span></div>
                             {showEnglish && (<div className="text-justify">{`[${no}:${vno}] `}<span className="font-serif whitespace-pre-line">{renderVerseText(verses_eng[no][vno])}</span></div>)}
                             {notes && notes[no + `:` + vno] && (
                                 <button
