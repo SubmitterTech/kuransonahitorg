@@ -34,11 +34,10 @@ const List = () => {
 
     return (
         <React.StrictMode>
-            <Navbar/>
-
-            <div className="w-screen h-screen bg-white p-2 overflow-y-auto flex flex-col items-center mt-12">
-                <div className='flex justify-end w-screen h-screen m-0 p-0 my-1 mt-3'>
-                    <div className={`${showEnglish ? "bg-gray-400" : "bg-gray-300"} px-2 py-2 mx-2 flex justify-center items-center h-[35px] w-[70px] cursor-pointer`} onClick={() => {
+            <div className="w-screen flex-1 bg-white p-2 overflow-y-auto flex flex-col items-center mt-16">
+                <Navbar />
+                <div className='flex justify-end w-full h-full p-0 mb-2 mr-0 translate-x-2'>
+                    <div className={`${showEnglish ? "bg-gray-400" : "bg-gray-300"} px-2 py-2 mx-2 flex justify-center items-center rounded shadow-md h-12 w-20 cursor-pointer`} onClick={() => {
 
                         setShowEnglish(!showEnglish)
                         localStorage.setItem("language", JSON.stringify(showEnglish ? "tr" : "eng"))
@@ -68,19 +67,21 @@ const List = () => {
                     }
 
                     return (
-                        <button
+                        <div
                             key={suraNumber}
                             onClick={() => handleSuraClick(suraNumber)}
                             className="lg:w-1/2 w-full flex justify-between mb-3 bg-neutral-100 hover:bg-blue-100 text-neutral-800 font-semibold border border-neutral-400 rounded shadow"
                         >
-                            <div className="bg-neutral-800 text-sky-500 w-14 h-full py-2 px-2 rounded-l font-semibold text-base lg:text-xl">
-                                {suraNumber}
+                            <div className="bg-neutral-800 text-sky-500 w-14 max-h-max flex items-center justify-center rounded-l font-semibold text-base lg:text-xl">
+                                <div>
+                                    {suraNumber}
+                                </div>
                             </div>
-                            <div className="flex w-full justify-between font-serif font-normal text-lg lg:text-2xl">
+                            <div className="flex w-full h-full justify-between font-serif font-normal text-lg lg:text-2xl">
                                 <div className="py-1.5 pl-2">{name} {showEnglish ? `/ ${nameEng}` : ""}</div>
                                 <div className="py-1.5 pr-2">{title} {showEnglish ? `/ ${titleEng}` : ""}</div>
                             </div>
-                        </button>
+                        </div>
                     )
                 })}
             </div>
