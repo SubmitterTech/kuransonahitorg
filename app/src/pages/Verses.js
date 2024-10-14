@@ -73,7 +73,7 @@ const Verses = ({ verses, titles, notes, verses_eng, titles_eng, notes_eng }) =>
         <>
             <Navbar />
             <div className={`select-text w-screen h-screen bg-white py-2 flex flex-col overflow-y-auto mt-16`}>
-                <div className='flex justify-end w-screen m-0 p-0 my-1'>
+                <div className='flex justify-end w-screen m-0 p-0 lg:pr-5 my-1'>
                     <div className={`${showEnglish ? "bg-gray-400" : "bg-gray-300"} px-2 py-2 mx-2 flex justify-center items-center rounded shadow-md h-12 w-20 cursor-pointer`} onClick={() => {
 
                         setShowEnglish(!showEnglish)
