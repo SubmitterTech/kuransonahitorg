@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar';
 const Appendices = () => {
 
   const menuItems = [
+    { path: "/ek/giris", label: "Giriş" },
     { path: "/ek/1", label: "Ek 1 - Büyük Mucizelerden Biri [74:35]" },
     { path: "/ek/2", label: "Ek 2 - Tanrı’nın Antlaşma Elçisi [3:81]" },
     { path: "/ek/3", label: "Ek 3 - Kuran’ı Kolaylaştırdık [54:17]" },

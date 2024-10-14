@@ -4,6 +4,7 @@ import Verses from './pages/Verses';
 import List from './pages/List';
 import Appendices from './pages/Appendices';
 import Apps from './pages/Apps';
+import Introduction from './pages/Introduction/Introduction';
 
 function App() {
   const [verses, setVerses] = useState(null);
@@ -61,6 +62,7 @@ function App() {
         <Route path="/:no" element={<Verses verses={verses} titles={titles} notes={notes} verses_eng={verses_eng} titles_eng={titles_eng} notes_eng={notes_eng} />} />
         <Route path="/ekler" element={<Appendices />} />
         <Route path="/ek" element={<Appendices />} />
+        <Route path="/ek/giris" element={<Introduction/>} />
         <Route path="/ek/:appId" element={<Apps />} />
       </Routes>
     </Router>
