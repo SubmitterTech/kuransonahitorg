@@ -73,7 +73,7 @@ const List = () => {
                             className="lg:w-1/2 w-full flex justify-between mb-3 bg-neutral-100 hover:bg-blue-100 text-neutral-800 font-semibold border border-neutral-400 rounded shadow"
                         >
                             <div className="bg-neutral-800 text-sky-500 w-14 max-h-max flex items-center justify-center rounded-l font-semibold text-base lg:text-xl">
-                                <div>
+                                <div className='h-full flex items-center'>
                                     {suraNumber}
                                 </div>
                             </div>
