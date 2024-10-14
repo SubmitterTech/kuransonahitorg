@@ -126,16 +126,17 @@ const Verses = ({ verses, titles, notes, verses_eng, titles_eng, notes_eng }) =>
                                     {showEnglish ? "Footnote (Dipnot)" : "Dipnot"}
                                 </button>
                             )}
-                            {/* Türkçe dipnot */}
-                            {showNotes[vno] && notes[no + `:` + vno] && (
-                                <div className="text-justify text-neutral-600 font-serif my-3 whitespace-pre-line border border-gray-300 px-1 py-1">
-                                    {notes[no + `:` + vno].join('\n\n')}
-                                </div>
-                            )}
+
                             {/* İngilizce dipnot */}
                             {showEnglish && showNotes[vno] && notes_eng[no + `:` + vno] && (
                                 <div className="text-justify text-neutral-600 font-serif my-3 whitespace-pre-line border border-gray-300 px-1 py-1">
                                     {notes_eng[no + `:` + vno].join('\n\n')}
+                                </div>
+                            )}
+                            {/* Türkçe dipnot */}
+                            {showNotes[vno] && notes[no + `:` + vno] && (
+                                <div className="text-justify text-neutral-600 font-serif my-3 whitespace-pre-line border border-gray-300 px-1 py-1">
+                                    {notes[no + `:` + vno].join('\n\n')}
                                 </div>
                             )}
                         </div>
